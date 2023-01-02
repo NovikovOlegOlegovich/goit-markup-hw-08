@@ -1,0 +1,22 @@
+@import 'utils/vars.scss';
+@import 'utils/mixin.scss';
+@import 'base/general-classes';
+@import 'base/comon-classes.scss';
+@import 'components/container.scss';
+@import 'components/logo.scss';
+@import 'layouts/header/header.scss';
+@import 'layouts/header/navigation__list.scss';
+@import 'layouts/header/contacts.scss';
+@import 'layouts/section-hero/hero.scss';
+@import 'layouts/section-advantages/advantages.scss';
+@import 'layouts/section-work-directions/work-directions__list.scss';
+@import 'layouts/section-our-team/team.scss';
+@import 'layouts/section-our-team/soc-list.scss';
+@import 'layouts/section-clients/clients.scss';
+@import 'layouts/footer/footer.scss';
+@import 'layouts/modal/modal.scss';
+
+@import 'layouts/header/navigation__list.scss';
+@import 'layouts/header/contacts.scss';
+@import 'layouts/portfolio-filter-nav/filter-nav.scss';
+@import 'layouts/portfolio-card-list/card-list.scss';

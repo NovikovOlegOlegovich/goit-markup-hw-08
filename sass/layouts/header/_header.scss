@@ -1,0 +1,12 @@
+.header {
+  background-color: $white-color;
+
+  &__container {
+  display: flex;
+  align-items: center;
+}
+}
+
+.heder-portfolio {
+  border-bottom: 1px solid #ececec;
+}

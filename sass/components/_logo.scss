@@ -1,0 +1,20 @@
+.logo {
+  display: block;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: $black-color;
+
+  font-family: 'Raleway';
+  @include font(26, 700, 1.19, null);
+
+  .footer & {
+    color: $white-color;
+  }
+
+  .header &__second-part-inscription,
+  .footer &__second-part-inscription {
+  color: $accent-color;
+}
+}
