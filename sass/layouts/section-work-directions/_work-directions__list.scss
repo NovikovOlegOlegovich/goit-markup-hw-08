@@ -1,3 +1,16 @@
+.work-directions {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.work-directions__title {
+  @include font(36, 700, 1.16, 0.03);
+  text-align: center;
+
+  color: $title-text-color;
+}
+
 .work-directions__list {
   display: flex;
 }
@@ -30,7 +43,7 @@
   margin-bottom: 27px;
 
   @include font(14, 700, 1.14, 0.03em);
-  
+
   text-transform: uppercase;
 
   color: $white-color;

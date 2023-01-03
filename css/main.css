@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+p {
+  margin: 0;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -45,9 +49,24 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -217,23 +236,53 @@
 }
 
 .advantages {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+  }
 }
 
-.advantages__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .advantages__item {
-  max-width: calc((100% - 90px) / 4);
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    max-width: calc((100% - 30px) / 2);
+  }
+  .advantages__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .advantages__item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    max-width: calc((100% - 90px) / 4);
+    margin-bottom: 0px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .advantages__item::before {
   display: block;
+  width: 100%;
   content: "";
   height: 120px;
   margin-bottom: 30px;
@@ -257,6 +306,7 @@
 .advantages__title {
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
   color: #212121;
   font-size: 14px;
   font-weight: 700;
@@ -265,13 +315,27 @@
   text-transform: uppercase;
 }
 
-.advantages__item:not(:last-child) {
-  margin-right: 30px;
+.advantages__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.02;
+  color: #757575;
 }
 
-.advantages__description {
-  margin-top: 0;
-  margin-bottom: 0;
+@media screen and (max-width: 1199px) {
+  .work-directions {
+    display: none;
+  }
+}
+
+.work-directions__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03;
+  text-align: center;
+  color: #212121;
 }
 
 .work-directions__list {
