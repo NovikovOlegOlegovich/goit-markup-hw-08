@@ -6,13 +6,13 @@
   background-color: #c4c4c4;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../../images/Header-mob.jpg);
+    url(../../../images/header-mob.jpg);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../images/Header-mob-2x.jpg);
+      url(../../../images/header-mob-2x.jpg);
   }
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,13 +22,13 @@
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../images/Header-tab.jpg);
+      url(../../../images/header-tab.jpg);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../../images/Header-tab-2x.jpg);
+        url(../../../images/header-tab-2x.jpg);
     }
   }
 
@@ -40,7 +40,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../../images/Header-desk-2x.jpg);
+        url(../../../images/header-desk-2x.jpg);
     }
   }
 }
