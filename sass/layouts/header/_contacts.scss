@@ -1,11 +1,35 @@
 .contacts {
-  display: flex;
   margin-left: auto;
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 .contacts__item + .contacts__item {
   margin-left: 50px;
+  @media screen and (min-width: 768px) {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 40px;
+    margin-top: 0px;
+  }
 }
 
 .contacts__link {
@@ -22,11 +46,17 @@
 
   color: inherit;
 
-  @include font ($fw:500, $lh:1.14);
+  @include font($fw: 500, $lh: 1.14);
 
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    justify-content: flex-start;
   }
 }
 

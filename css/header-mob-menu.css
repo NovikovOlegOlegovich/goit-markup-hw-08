@@ -18,6 +18,11 @@
   padding: 0px;
   color: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .header__menu-button {
+    display: none;
+  }
+}
 
 .header__menu-button:hover, .header__menu-button:focus {
   fill: currentColor;
