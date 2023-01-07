@@ -4,11 +4,21 @@
   }
 }
 
+.work-directions.section {
+  @media screen and (min-width: 1200px) {
+    padding-top: 0px;
+  }
+}
+
 .work-directions__title {
   @include font(36, 700, 1.16, 0.03);
   text-align: center;
 
   color: $title-text-color;
+
+  @media screen and (min-width: 1200px){
+    margin-top: 0px;
+  }
 }
 
 .work-directions__list {

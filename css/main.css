@@ -323,8 +323,6 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 21px;
-    margin-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -338,8 +336,6 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 32px;
-    margin-bottom: 32px;
   }
 }
 
@@ -582,6 +578,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .work-directions.section {
+    padding-top: 0px;
+  }
+}
+
 .work-directions__title {
   font-size: 36px;
   font-weight: 700;
@@ -589,6 +591,11 @@ p {
   letter-spacing: 0.03;
   text-align: center;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .work-directions__title {
+    margin-top: 0px;
+  }
 }
 
 .work-directions__list {
@@ -632,6 +639,12 @@ p {
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -750,8 +763,14 @@ p {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .client-list {
@@ -1424,8 +1443,6 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 21px;
-    margin-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1439,8 +1456,6 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 32px;
-    margin-bottom: 32px;
   }
 }
 
