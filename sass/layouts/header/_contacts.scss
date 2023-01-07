@@ -1,6 +1,7 @@
 .contacts {
   display: flex;
   margin-left: auto;
+  display: none;
 }
 
 .contacts__item + .contacts__item {

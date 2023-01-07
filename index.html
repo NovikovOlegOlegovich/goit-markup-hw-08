@@ -19,40 +19,105 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body">
-
     <!-- Шапка сайта -->
 
     <header class="header">
       <div class="container header__container">
-        <a href="#" lang="en" class="logo link"><span class="logo__second-part-inscription">Web</span>Studio</a>
+        <a href="#" lang="en" class="logo link"
+          ><span class="logo__second-part-inscription">Web</span>Studio</a
+        >
 
         <nav class="navigation">
-          <ul class="navigation__list  list">
-            <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--active link">Студія</a></li>
-            <li class="navigation__item"><a href="./portfolio.html" class="navigation__link link">Портфоліо</a></li>
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link navigation__link--active link"
+                >Студія</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link link">Портфоліо</a>
+            </li>
             <li class="navigation__item"><a href="#" class="navigation__link link">Контакти</a></li>
           </ul>
         </nav>
 
         <ul class="contacts list">
           <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__link  link"
+            <a href="mailto:info@devstudio.com" class="contacts__link link"
               ><svg width="16" height="12" class="contacts__icon">
                 <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a
             >
           </li>
           <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__link  link"
+            <a href="tel:+380961111111" class="contacts__link link"
               ><svg width="10" height="16" class="contacts__icon">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a
             >
           </li>
         </ul>
-        <button class="header__menu-button">
-           <svg width="40" height="40" class="header__menu__svg">
-                <use href="./images/menu-button.svg"></use>
-              </svg>
+        <button type="button" class="header__menu-button menu-open ">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu-button"></use>
+          </svg>
         </button>
+      </div>
+
+      <div class="mobile-menu data-modal">
+        <div class="container">
+          <button type="button" class="mobile-menu__button-close menu-close">
+            <svg width="18" height="18">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu-position">
+            
+              <nav class="mobile-menu__navigation">
+                <ul class="mobile-menu__list list">
+                  <li class="mobile-menu__item">
+                    <a href="./index.html" class="mobile-menu__link mobile-menu__link--active link"
+                      >Студія</a
+                    >
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="./portfolio.html" class="mobile-menu__link link">Портфоліо</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link link">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            
+            <div>
+              <ul class="mobile-menu__contacts list">
+                <li class="mobile-menu__contacts-item">
+                  <a href="mailto:info@devstudio.com" class="mobile-menu__mob-num-link link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-menu__contacts-item">
+                  <a href="tel:+380961111111" class="mobile-menu__email-link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mobile-menu__soc-list">
+                <li class="mobile-menu__soc-item soc-inst list">
+                  <a href="#" class="mobile-menu__soc-link link">Instagram</a>
+                </li>
+                <li class="mobile-menu__soc-item soc-twit list">
+                  <a href="#" class="mobile-menu__soc-link link">Twitter</a>
+                </li>
+                <li class="mobile-menu__soc-item soc-face list">
+                  <a href="#" class="mobile-menu__soc-link link">Facebook</a>
+                </li>
+                <li class="mobile-menu__soc-item list">
+                  <a href="#" class="mobile-menu__soc-link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -72,19 +137,27 @@
           <ul class="advantages__list list">
             <li class="advantages__item advantages__item--add-img-antenna">
               <h3 class="advantages__title">Увага до деталей</h3>
-              <p class="advantages__description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+              <p class="advantages__description">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
             </li>
             <li class="advantages__item advantages__item--add-img-clock">
               <h3 class="advantages__title">Пунктуальність</h3>
-              <p  class="advantages__description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+              <p class="advantages__description">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
             </li>
             <li class="advantages__item advantages__item--add-img-diagram">
               <h3 class="advantages__title">Планування</h3>
-              <p class="advantages__description">Так само консультація з широким активом значною мірою зумовлює.</p>
+              <p class="advantages__description">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
             <li class="advantages__item advantages__item--add-img-astronaut">
               <h3 class="advantages__title">Сучасні технології</h3>
-              <p class="advantages__description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+              <p class="advantages__description">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
             </li>
           </ul>
         </div>
@@ -305,12 +378,12 @@
         </div>
       </section>
 
-       <!-- Секция-"Постоянные клиенты"  -->
+      <!-- Секция-"Постоянные клиенты"  -->
 
       <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
-          <ul class="client-list list ">
+          <ul class="client-list list">
             <li class="client-card">
               <a href="#" class="client-card__link link">
                 <svg width="106" height="60" class="client-card__svg">
@@ -320,7 +393,7 @@
             </li>
             <li class="client-card">
               <a href="#" class="client-card__link link">
-                <svg width="106" height="60" class="client-card__svg" >
+                <svg width="106" height="60" class="client-card__svg">
                   <use href="./images/icons.svg#icon-client-2"></use>
                 </svg>
               </a>
@@ -364,7 +437,9 @@
         <div class="footer__position">
           <address class="address">
             <div class="adress__container">
-              <a href="#" lang="en" class="logo address__logo link"> Web<span class="logo__second-part-inscription">Studio</span></a>
+              <a href="#" lang="en" class="logo address__logo link">
+                Web<span class="logo__second-part-inscription">Studio</span></a
+              >
 
               <ul class="address-inf list">
                 <li>
@@ -373,9 +448,13 @@
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:info@devstudio.com" class="address-inf__mail link">info@devstudio.com</a>
+                  <a href="mailto:info@devstudio.com" class="address-inf__mail link"
+                    >info@devstudio.com</a
+                  >
                 </li>
-                <li><a href="tel:+380961111111" class="address-inf__tel link">+38 096 111 11 11 </a></li>
+                <li>
+                  <a href="tel:+380961111111" class="address-inf__tel link">+38 096 111 11 11 </a>
+                </li>
               </ul>
             </div>
 
@@ -399,12 +478,14 @@
                 <li class="soc-links-list__item">
                   <a href="#" class="soc-links-list__link link"
                     ><svg width="20" height="20" class="soc-links-list__icon">
-                      <use href="./images/icons.svg#icon-facebook"></use></svg></a>
+                      <use href="./images/icons.svg#icon-facebook"></use></svg
+                  ></a>
                 </li>
                 <li class="soc-links-list__item">
                   <a href="#" class="soc-links-list__link link"
                     ><svg width="20" height="20" class="soc-links-list__icon">
-                      <use href="./images/icons.svg#icon-linkedin"></use></svg></a>
+                      <use href="./images/icons.svg#icon-linkedin"></use></svg
+                  ></a>
                 </li>
               </ul>
             </div>
@@ -431,7 +512,7 @@
       </div>
     </footer>
 
-<!-- Модальное окно  -->
+    <!-- Модальное окно  -->
 
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
@@ -487,7 +568,13 @@
 
           <div class="form__checkbox-field">
             <label for="policy" class="form__checkbox-label">
-              <input type="checkbox" name="policy" id="policy" value="true" class="form__checkbox" />
+              <input
+                type="checkbox"
+                name="policy"
+                id="policy"
+                value="true"
+                class="form__checkbox"
+              />
               <span class="form__checkbox-icon"></span>
               Погоджуюся з розсилкою та приймаю<a href="#" class="form__link">Умови договору</a>
             </label>
@@ -499,5 +586,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
