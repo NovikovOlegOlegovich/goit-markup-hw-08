@@ -22,8 +22,8 @@
   top: 50%;
   left: 50%;
 
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
+  max-height: 609px;
   padding: 40px 40px;
 
   border-radius: 4px;
@@ -36,6 +36,11 @@
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     @media screen and (max-width: 480px) {
+    width: 300px;
+    height: 581px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 528px;
