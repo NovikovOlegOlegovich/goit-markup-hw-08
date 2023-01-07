@@ -37,9 +37,10 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-     @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     width: 300px;
     height: 581px;
+    padding: 20px 20px;
   }
 
   @media screen and (min-width: 768px) {
@@ -80,6 +81,10 @@
   margin-bottom: 12px;
 
   color: $title-text-color;
+
+  @media screen and (max-width: 480px) {
+    @include font(14, 700, 1.15, 0.03em);
+  }
 }
 
 .form__field {
@@ -143,6 +148,11 @@
   @media screen and (min-width: 768) {
     min-width: 448px;
     min-height: 120px;
+  }
+
+  @media screen and (max-width: 480px) {
+     min-width: 220px;
+    min-height: 100px;
   }
 }
 

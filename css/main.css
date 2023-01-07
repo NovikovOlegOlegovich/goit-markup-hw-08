@@ -1146,6 +1146,7 @@ p {
   .modal {
     width: 300px;
     height: 581px;
+    padding: 20px 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1191,6 +1192,14 @@ p {
   margin-top: 0;
   margin-bottom: 12px;
   color: #212121;
+}
+@media screen and (max-width: 480px) {
+  .modal__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
 }
 
 .form__field {
@@ -1291,6 +1300,12 @@ p {
   .form__textarea {
     min-width: 448px;
     min-height: 120px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__textarea {
+    min-width: 220px;
+    min-height: 100px;
   }
 }
 
